@@ -33,8 +33,8 @@ class AdMobHelper:NSObject {
     
     func loadBannerAds() {
         let adRequest = GADRequest()
-        //Commit this line whengoing to live.
-        adRequest.testDevices = [kGADSimulatorID, "87e333b4fe153f14d9e2c76e1f28a440078a47fbs"]
+        //Uncommit this line when going to test.
+        //adRequest.testDevices = [kGADSimulatorID, "87e333b4fe153f14d9e2c76e1f28a440078a47fbs"]
         bannerView.load(adRequest)
     }
     
@@ -67,8 +67,8 @@ class AdMobHelper:NSObject {
     
     func loadIntersitailAds()  {
         let request = GADRequest()
-        //Commit this line when going to live.
-        request.testDevices = [kGADSimulatorID, "87e333b4fe153f14d9e2c76e1f28a440078a47fbs"]
+        //Uncommit this line when going to live.
+//         request.testDevices = [kGADSimulatorID, "87e333b4fe153f14d9e2c76e1f28a440078a47fbs"]
         self.interstitial.load(request)
     }
     
