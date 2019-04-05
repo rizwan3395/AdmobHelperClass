@@ -9,9 +9,9 @@ import GoogleMobileAds
 
 class AdMobHelper:NSObject {
     
-    fileprivate var bannerAdUnit = "Your Admob Banner ID"
-    fileprivate var intersitialAdUnit = "Your Admob Account Intersitial ID"
-    fileprivate var rewardedAdUnit = "Your Admob Rewarded Add ID"
+    fileprivate var bannerAdUnit = "ca-app-pub-3339156048416562/7681813933"
+    fileprivate var intersitialAdUnit = "ca-app-pub-3339156048416562/2145242760"
+    fileprivate var rewardedAdUnit = ""
 
     
     fileprivate var bannerView: GADBannerView!
@@ -60,7 +60,7 @@ class AdMobHelper:NSObject {
             ])
     }
     
-    func initIntersitialAds(Controller: UIViewController) {
+    func initIntersitialAds() {
         interstitial = GADInterstitial(adUnitID: intersitialAdUnit)
         interstitial.delegate = self
     }
@@ -147,6 +147,7 @@ extension AdMobHelper:GADInterstitialDelegate {
     /// Tells the delegate the interstitial had been animated off the screen.
     func interstitialDidDismissScreen(_ ad: GADInterstitial) {
         print("interstitialDidDismissScreen")
+        initIntersitialAds()
         loadIntersitailAds()
     }
     
