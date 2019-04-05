@@ -1,6 +1,5 @@
 //
 //  AdMobHelper.swift
-//  Blend
 //
 //  Created by Muhamad Rizwan on 05/04/2019.
 //
