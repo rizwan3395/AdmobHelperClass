@@ -3,7 +3,6 @@
 //  Blend
 //
 //  Created by Muhamad Rizwan on 05/04/2019.
-//  Copyright © 2019 ntq-solution. All rights reserved.
 //
 
 import Foundation
@@ -11,9 +10,9 @@ import GoogleMobileAds
 
 class AdMobHelper:NSObject {
     
-    fileprivate var bannerAdUnit = "ca-app-pub-3339156048416562/7681813933"
-    fileprivate var intersitialAdUnit = "ca-app-pub-3339156048416562/2145242760"
-    fileprivate var rewardedAdUnit = ""
+    fileprivate var bannerAdUnit = "Your Admob Banner ID"
+    fileprivate var intersitialAdUnit = "Your Admob Account Intersitial ID"
+    fileprivate var rewardedAdUnit = "Your Admob Rewarded Add ID"
 
     
     fileprivate var bannerView: GADBannerView!
